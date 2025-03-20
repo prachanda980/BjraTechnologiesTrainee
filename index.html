@@ -3,103 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo project</title>
+    <title>Demo Project</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        .header{
+        .header {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 100%;
             background-color: #121212;
+            padding: 10px 0;
         }
-        .name{
-            color:white;
+        .name {
+            color: white;
             font-weight: 600;
             margin-left: 30px;
             font-family: Arial, Helvetica, sans-serif;
-           
-            
         }
-        .navlist{
-            
+        .navlist {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            
-        
         }
-        .navlinks{
+        .navlinks {
             display: flex;
-            
             align-items: center;
             justify-content: space-around;
-            list-style: none; 
+            list-style: none;
             width: 80%;
-            
         }
-        .navbars{
+        .navbars {
+            cursor: pointer;
             text-decoration: none;
             color: antiquewhite;
             padding: 20px;
-           
         }
-        .main{
+        .navbars:hover{
+            color: blue;
+        }
+        .main {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-around;
             background-color: aliceblue;
-
+            padding: 20px;
         }
-        .about{
-            border: none;
-            box-shadow: 10 10 10 black;
+        .about {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
             margin-top: 10px;
             padding: 20px;
-
+            background: white;
+            border-radius: 5px;
         }
-        .about h1{
+        .about h2 {
             font-family: Arial, Helvetica, sans-serif;
             color: blue;
             font-size: large;
         }
-
-
+        .box-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .box {
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <nav class="header">
-
         <div class="name">
-<span>namaste</span>
+            <span>Namaste</span>
         </div>
         <div class="navlist">
             <ul class="navlinks">
-                <li class="navbars">hello</li>
-                <li class="navbars">projects</li>
+                <li class="navbars">Hello</li>
+                <li class="navbars">Projects</li>
             </ul>
         </div>
     </nav>
-<div class="main">
-    <div class="about">
-        <h2>hello welcome static page site</h2>
-        <p>this is a demo tages where you learn nothin</p>
+    <div class="main">
+        <div class="about">
+            <h2>Welcome to Our Static Page</h2>
+            <p>This is a demo page where you can explore nothing.</p>
+        </div>
+        <div class="about">
+            <h2>Welcome to Our Static Page</h2>
+            <p>This is a demo page where you can explore nothing.</p>
+        </div>
+        <div class="about">
+            <h2>Welcome to Our Static Page</h2>
+            <p>This is a demo page where you can explore nothing.</p>
+        </div>
     </div>
-    <div class="about">
-        <h2>hello welcome static page site</h2>
-        <p>this is a demo tages where you learn nothin</p>
-    </div>
-    <div class="about">
-        <h2>hello welcome static page site</h2>
-        <p>this is a demo tages where you learn nothin</p>
-    </div>
-</div>
-
+    <section class="box-section">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </section>
+    <footer class="footer">
+        &copy; 2025 Demo Project | All Rights Reserved
+    </footer>
 </body>
 </html>
